@@ -1,4 +1,4 @@
-package viewBash;
+package view;
 
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
@@ -6,10 +6,10 @@ import javax.swing.JFrame;
 public class JMainFrame extends JFrame{
 	
 	private static final long serialVersionUID = 1L;
-	private JPanelMain JPanelMain;
+	private JMainPanel JPanelMain;
 
 	public JMainFrame(ActionListener actionListener) {
-		
+		JPanelMain = new JMainPanel();
 	}
 	
 	

@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 import javax.swing.SpinnerNumberModel;
-import viewBash.JMainFrame;
+import view.JMainFrame;
 
 
 public class Controller implements ActionListener{
