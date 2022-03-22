@@ -4,16 +4,16 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import models.MainManager;
-import view.JMainFrame;
+import view.MainWindow;
 
 
 public class Controller implements ActionListener{
 	
-	private JMainFrame jMainFrame;
+	private MainWindow jMainFrame;
 	private MainManager mainManager;
 	
 	public Controller() {
-		jMainFrame = new JMainFrame(this);
+		jMainFrame = new MainWindow(this);
 		mainManager = new MainManager();
 	}
 
