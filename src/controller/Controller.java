@@ -9,19 +9,22 @@ import view.MainWindow;
 
 public class Controller implements ActionListener{
 	
-	private MainWindow jMainFrame;
+	private MainWindow mainPanel;
 	private MainManager mainManager;
 	
 	public Controller() {
-		jMainFrame = new MainWindow(this);
+		mainPanel = new MainWindow(this);
 		mainManager = new MainManager();
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent arg0) {
-		
+	public void actionPerformed(ActionEvent event) {
+		switch (Actions.valueOf(event.getActionCommand())) {
+		case OPEN_FILE:
+				System.out.println("Abrir archivo");
+			break;
+		default:
+			break;
+		}
 	}
-
-	
-
 }
