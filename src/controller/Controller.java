@@ -3,18 +3,19 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import models.MainManager;
+import model.deviceManagement.DeviceManager;
 import view.MainWindow;
 
 
 public class Controller implements ActionListener{
 	
 	private MainWindow mainWindow;
-	private MainManager mainManager;
+	private DeviceManager deviceManager;
 	
 	public Controller() {
 		mainWindow = new MainWindow(this);
-		mainManager = new MainManager();
+		deviceManager = new DeviceManager();
+		deviceManager.createDevices();
 	}
 
 	@Override
