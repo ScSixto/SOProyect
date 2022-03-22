@@ -9,11 +9,11 @@ import view.MainWindow;
 
 public class Controller implements ActionListener{
 	
-	private MainWindow mainPanel;
+	private MainWindow mainWindow;
 	private MainManager mainManager;
 	
 	public Controller() {
-		mainPanel = new MainWindow(this);
+		mainWindow = new MainWindow(this);
 		mainManager = new MainManager();
 	}
 
@@ -21,7 +21,7 @@ public class Controller implements ActionListener{
 	public void actionPerformed(ActionEvent event) {
 		switch (Actions.valueOf(event.getActionCommand())) {
 		case OPEN_FILE:
-				System.out.println("Abrir archivo");
+				mainWindow.changeToPanelResourcesManagement();
 			break;
 		default:
 			break;

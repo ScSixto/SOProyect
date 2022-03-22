@@ -1,5 +1,8 @@
 package view;
 
+import java.awt.Color;
+
+import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
 public class PanelDeviceManagement extends JPanel {
@@ -7,6 +10,8 @@ public class PanelDeviceManagement extends JPanel {
 	private static final long serialVersionUID = 1L;
 
 	public PanelDeviceManagement() {
-		// TODO Auto-generated constructor stub
+
+		this.setBackground(Color.WHITE);
+		this.setBorder(BorderFactory.createTitledBorder("Subsistema de gestión de dispositivos"));
 	}
 }

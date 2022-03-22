@@ -1,5 +1,8 @@
 package view;
 
+import java.awt.Color;
+
+import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
 public class PanelProcessManagement extends JPanel {
@@ -7,7 +10,9 @@ public class PanelProcessManagement extends JPanel {
 	private static final long serialVersionUID = 1L;
 	
 	public PanelProcessManagement() {
-		// TODO Auto-generated constructor stub
+		
+		this.setBackground(Color.WHITE);
+		this.setBorder(BorderFactory.createTitledBorder("Subsistema de gestión de procesos"));
 	}
 
 }

@@ -2,6 +2,8 @@ package view;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -31,6 +33,8 @@ public class MainWindow extends JFrame{
 	}
 	
 	private void initPanels(ActionListener actionListener) {
+		setLayout(new GridLayout(3, 3));
+		
 		mainPanel = new MainPanel(actionListener);
 		panelFileManager = new PanelFileManager();
 		panelMemoryManagement = new PanelMemoryManagement();
@@ -38,7 +42,13 @@ public class MainWindow extends JFrame{
 		panelResourcesManagement = new PanelResourcesManagement(actionListener);
 		panelDeviceManagement = new PanelDeviceManagement();
 		panelActual = mainPanel;
-		add(panelActual, BorderLayout.CENTER);
+		add(mainPanel);
+		add(panelFileManager);
+		add(panelMemoryManagement);
+		add(panelProcessManagement);
+		add(panelResourcesManagement);
+		add(panelDeviceManagement);
+//		add(panelActual, BorderLayout.CENTER);
 	}
 	
 	private void changePanel(JPanel newPanel) {
@@ -50,7 +60,7 @@ public class MainWindow extends JFrame{
 	}
 
 	public void changeToPanelResourcesManagement() {
-		changePanel(panelResourcesManagement);
+//		changePanel(panelResourcesManagement);
 	}
 	
 	
