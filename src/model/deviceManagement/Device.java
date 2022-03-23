@@ -1,24 +1,18 @@
-package model.deviceManager;
+package model.deviceManagement;
 
 public class Device {
 
 	private int id;
-	private static int count = 1 ;
 	private String name;
-	private boolean status;
+	private boolean status = true;
 	
-	public Device(String name) {
-		this.id = count;
+	public Device(String name, int id) {
+		this.id = id;
 		this.name = name;
-		count++;
 	}
 
 	public int getId() {
 		return id;
-	}
-
-	public static int getCount() {
-		return count;
 	}
 
 	public String getName() {
