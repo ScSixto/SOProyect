@@ -1,0 +1,6 @@
+package controller.memoryManager;
+
+public enum Command {
+    SHOW_SEGMENT_DESCRIPTION, LEAVE_TO_SHOW_SEGMENT_DESCRIPTION, SEND_TO_VIRTUAL_MEMORY, SEND_TO_PRINCIPAL_MEMORY
+    
+}
